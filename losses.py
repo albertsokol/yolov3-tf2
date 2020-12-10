@@ -34,7 +34,7 @@ def get_pos_loss(y_true, y_pred, obj_mask, label_length):
     th_sum = K.sum(th_se)
     pos_loss = tx_sum + ty_sum + tw_sum + th_sum
 
-    return pos_loss / 16
+    return pos_loss
 
 
 def get_obj_loss(y_true, y_pred, obj_mask, label_length):
@@ -115,7 +115,7 @@ def wrapper_loss(label_length, batch_size):
         ignore_mask = K.cast((gt_obj != -1.), float)
 
         # Calculate the individual components of the loss function
-        pos_loss = get_pos_loss(y_true, y_pred, obj_mask, label_length)
+        pos_loss = get_pos_loss(y_true, y_pred, obj_mask, label_length) / batch_size
         obj_loss = get_obj_loss(y_true, y_pred, obj_mask, label_length)
         no_obj_loss = get_no_obj_loss(y_true, y_pred, obj_mask, ignore_mask, label_length)
         class_loss = get_class_loss(y_true, y_pred, obj_mask, label_length)
