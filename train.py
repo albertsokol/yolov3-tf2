@@ -109,8 +109,6 @@ if __name__ == '__main__':
     imgnet_model.load_weights(imgnet_pretrain_path)
     model = create_model(CNN_INPUT_SIZE, 3, LABEL_LENGTH)
 
-    tf.keras.utils.plot_model(model, to_file='model.png')
-
     # Because the input sizes and output heads are different, easiest way to transfer weights is loading them layer
     # by layer over the DarkNet-53 backbone
     print('Loading following layer weights from ImageNet pretrained backbone to yolo v3 backbone...')
