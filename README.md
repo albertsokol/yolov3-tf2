@@ -22,7 +22,7 @@ Compatible Darknet-53 backbone pre-trained on ImageNet available at link
 
 
 ## Demo 
-[![Demo of model](https://github.com/albertsokol/yolov3-tf2/blob/master/readme_images/youtube_link.png)](https://www.youtube.com/watch?v=tXYPUMHGe7A "My YOLOv3 implementation : object detection on dashcam footage")
+[![Demo of model](https://github.com/albertsokol/yolov3-tf2/blob/main/readme_images/youtube_link.png)](https://www.youtube.com/watch?v=tXYPUMHGe7A "My YOLOv3 implementation : object detection on dashcam footage")
 
 ## Requirements
 - Tensorflow 2.x
@@ -81,7 +81,7 @@ This mode cycles through all feasible learning rates, and plots the loss against
 
 Use 1 epoch with 1000-3000 training steps for best results. If the loss explodes without stopping the training, you might have to zoom in a fair bit.
 
-![Image of LRF plot](https://github.com/albertsokol/yolov3-tf2/blob/master/readme_images/lrf_annotated.png)
+![Image of LRF plot](https://github.com/albertsokol/yolov3-tf2/blob/main/readme_images/lrf_annotated.png)
 
 # Prediction
 
