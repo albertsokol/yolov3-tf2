@@ -8,7 +8,7 @@ Features:
 - Video processing functions for turning videos to frames and vice versa 
 - Plenty of documentation and comments so you can easily see what's happening!
 
-Compatible Darknet-53 backbone pre-trained on ImageNet available at link 
+Compatible Darknet-53 backbone pre-trained on ImageNet available for download [here](https://drive.google.com/drive/folders/1h9YnOuQO0CRSfrciwZHOhIDGlTzBT7UR?usp=sharing) 
 
 ## Contents
 - [Demo](#Demo)
@@ -96,4 +96,5 @@ A YoloPredictor object is created which has 2 public functions:
 If you're using `predict()`, just pass the image directory you want to use to the YoloPredictor constructor. For `predict_folder()` the image directories should be the folder paths given. 
 
 # References
+YOLOv3 paper
 https://arxiv.org/abs/1804.02767
